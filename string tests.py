@@ -1,5 +1,6 @@
 import string
 import sys
+from MyCalculate import *
 
 test = "alaMaKota"
 
@@ -10,9 +11,11 @@ print(test)
 
 a = int(input("Podaj a: "))
 b = int(input("Podaj b: "))
-c = a+b
+c = dodaj(a,b)
+p = pole_trojkata(a,b)
 
 print(a, " + ", b, " = ", c)
+print("Pole: ", p)
 
 print("Liczba argumentów przekazana do systemu to: ", str(sys.argv))
 
